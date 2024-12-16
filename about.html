@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Sport News</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="search.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">Sport News</div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="articles.html">Статьи</a>
+                <a href="inter.html">Интервью</a>
+                <a href="about.html" class="active">О нас</a>
+            </div>
+            <button class="search-btn">
+                <img src="assets/images/Frame.png" style="width: 30px; height: 30px;" alt="Поиск"> Поиск
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-profile">
+                    <img src="assets/images/image51.png" alt="ЗИСиП-822" class="profile-image">
+                    <h2 class="profile-title">ЗИСиП-822</h2>
+                </div>
+                <div class="about-text">
+                    <p>Добро пожаловать на мой сайт, созданный для всех, кто живёт спортом и хочет быть в курсе последних новостей! Здесь вы найдете актуальную информацию о самых ярких событиях в мире спорта, будь то футбольные матчи, баскетбольные турниры, хоккейные чемпионаты или другие спортивные события.</p>
+                    
+                    <p>Этот проект — часть курсовой работы студента колледжа Информатики и Программирования Финансового университета при Правительстве Российской Федерации Николая Маленкова. Я студент группы ЗИСиП-822, посвятил данный сайт качественной подаче информации и удобному интерфейсу для пользователей.</p>
+                    
+                    <p>Я сделал акцент на объективной подаче информации и обеспечении оперативным обновлением, чтобы пользователи могли быть в курсе последних новостей и достижений спортсменов. Особое внимание уделяется статьям, интервью с профессионалами и экспертам спорта, а также обзорам ключевых игр и событий, чтобы каждый читатель мог найти что-то интересное для себя.</p>
+                    
+                    <p>Моя миссия — предоставить надёжный источник новостей для всех спортивных энтузиастов. Мы не просто передаём новости, но и помогаем погружаться в мир спорта, анализируя его тенденции и значимые моменты. Спасибо, что вы с нами!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Sport News</div>
+            <div class="social-links">
+                <a href="#" class="social-link telegram">
+                    <img src="assets/images/icon2.png" alt="Telegram">
+                </a>
+                <a href="#" class="social-link vk">
+                    <img src="assets/images/icon1.png" alt="VK">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

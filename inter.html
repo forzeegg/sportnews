@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи - Sport Интервью</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="search.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">Sport News</div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="articles.html">Статьи</a>
+                <a href="inter.html" class="active">Интервью</a>
+                <a href="about.html" >О нас</a>
+            </div>
+            <button class="search-btn">
+                <img src="assets/images/Frame.png" style="width: 30px; height: 30px;" alt="Поиск"> Поиск
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles-section">
+            <h1>Интервью</h1>
+            <div class="articles-grid">
+                <!-- Articles will be dynamically inserted here -->
+            </div>
+            <div class="pagination">
+                <!-- Pagination will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Sport News</div>
+            <div class="social-links">
+                <a href="#" class="social-link telegram">
+                    <img src="assets/images/icon2.png" alt="Telegram">
+                </a>
+                <a href="#" class="social-link vk">
+                    <img src="assets/images/icon1.png" alt="VK">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="articles.js"></script>
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
